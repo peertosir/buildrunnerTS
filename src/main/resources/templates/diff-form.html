@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diff form</title>
+</head>
+<body>
+<h1>Diff</h1>
+<form action="#" th:action="@{/start-diff}" th:object="${diff}" method="post">
+    <p>Service: <input type="text" th:field="*{service}" th:required="required" /></p>
+    <p>Host1: <input type="text" th:field="*{host1}" th:required="required" /></p>
+    <p>Host2: <input type="text" th:field="*{host2}" th:required="required" /></p>
+    <p>Exclude RegExps: <input type="text" th:field="*{excludeRegExps}"/></p>
+    <p>
+        <input type="submit" value="Submit"/> <input type="reset" value="Reset"/>
+    </p>
+</form>
+</body>
+</html>

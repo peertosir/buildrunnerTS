@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sent diff to TS API</title>
+</head>
+<body>
+<h1>Sent Diff</h1>
+  <p th:text="'Created BuildID: ' + ${response.getId()}" />
+  <p th:text="'Message: ' + ${response.getMessage()}" />
+  <a href="/start-diff">Start new diff</a>
+</body>
+</html>
