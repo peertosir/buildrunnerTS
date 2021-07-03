@@ -6,8 +6,8 @@
 </head>
 <body>
 <h1>Sent Diff</h1>
-  <p th:text="'Created BuildID: ' + ${response.getId()}" />
-  <p th:text="'Message: ' + ${response.getMessage()}" />
+    <h2 th:text="'Diff test for: ' + ${name}"></h2>
+  <p th:utext="'Diff Result: ' + ${response}" />
   <a href="/start-diff">Start new diff</a>
 </body>
 </html>
